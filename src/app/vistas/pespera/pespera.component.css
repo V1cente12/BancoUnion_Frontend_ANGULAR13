@@ -1,0 +1,10 @@
+*
+{
+    font-family: "Poppins", sans-serif;
+
+}
+.pagina{
+    display: flex;
+    justify-content: center;
+    margin-top: 17.5%;
+}

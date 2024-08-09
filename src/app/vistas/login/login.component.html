@@ -1,0 +1,26 @@
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="assets/img/bunionlogo.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+      <input type="text" id="login" class="fadeIn second"  placeholder="Usuario" formControlName="username">
+      <input type="password" id="password" class="fadeIn third"  placeholder="Contraseña" formControlName="password">
+      <input type="submit" class="fadeIn fourth" value="Ingresar">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">¿Olvidaste tu contraseña?</a>
+    </div>
+
+  </div>
+</div>

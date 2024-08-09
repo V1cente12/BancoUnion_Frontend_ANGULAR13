@@ -1,0 +1,206 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<style>
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.titulo{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10%;
+  font-size: 50px;
+  font-weight: bold;
+  color: #004990;
+}
+.mb-3{
+  display: flex;
+  flex-wrap: wrap; 
+        justify-content: center;
+        gap: 5% ;
+        
+        font-family: 'Poppins', sans-serif;
+        margin-top: 1%;
+
+}
+
+.botonn{
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height: 250px;
+  margin: 3% 0%;
+  
+  
+  
+}
+.imagenn{
+  border-radius: 52%;
+  box-shadow: 2px 2px 5px rgb(216, 216, 216);
+  
+  
+}
+.btn{
+  background-color: #F8F9FA;
+  color: #0799ce;
+  font-size: 30px;
+  border: solid rgba(160, 196, 219, 0);
+  box-shadow: 1px 1px 5px rgb(170, 165, 165);
+  border-radius: 10px;
+  font-weight: bold;
+
+}
+
+.btn:hover{
+  background: #85DEFE;
+ color: #004A88;
+  border: solid #85DEFE;
+}
+
+.modal .modal-lg { 
+  max-width: 60% !important;
+  max-height: 80% !important;  
+  font-weight: bold;
+ 
+ 
+}
+.modal-header{
+  background: #85DEFE;
+  color: #3B6492;
+ 
+
+}
+.modal-body{
+  background: #FAFAFA;
+  
+}
+
+.modd{
+  text-align: left;
+  font-weight: bold;
+  
+ 
+}
+.enlace2{
+  text-decoration: none;
+ 
+  color: #1487CA;
+  border: solid rgba(160, 196, 219, 0);
+  font-size: 35px;
+  background-color: #FAFAFA;
+}
+.tit{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: #3B6492;
+}
+
+</style>
+<body>
+  <div class="titulo">
+    ¿Qué te pareció mi atención?
+  </div>
+  <div class="mb-3">
+  
+    <div class="botonn">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img class="imagenn" src="assets/img/muyinstatisfecho.jpg" alt="">
+        Muy Insatisfecho
+      </button>
+    </div>
+    
+    <div class="botonn">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img class="imagenn" src="assets/img/insatisfecho.jpg" alt="">
+        Insatisfecho
+      </button>
+    </div>
+    
+    <div class="botonn">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img class="imagenn" src="assets/img/neutral.jpg" alt="">
+        Neutral
+      </button>
+    </div>
+    
+    <div class="botonn">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img class="imagenn" src="assets/img/satisfecho.jpg" alt="">
+        Satisfecho
+      </button>
+    </div>
+    
+    <div class="botonn">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img class="imagenn" src="assets/img/muysatisfecho.jpg" alt="">
+        Muy Satisfecho
+      </button>
+    </div>
+   
+  
+      
+   
+      
+   <div class="modd">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title" id="exampleModalLabel">
+              <div class="tit">Seleccione un motivo:</div> </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              
+                <button class="enlace2" routerLink="/paginalogo" data-bs-dismiss="modal" >- Espere demasiado en colas</button>
+             
+              <hr>
+              
+                <button class="enlace2" routerLink="/paginalogo" data-bs-dismiss="modal" >- No recibí un buen trato (Azafata, Seguridad)</button>
+              
+              <hr>
+              
+                <button class="enlace2" routerLink="/paginalogo" data-bs-dismiss="modal" >- Poco espacio, no hay sillas</button>
+              
+              <hr>
+              
+                <button class="enlace2" routerLink="/paginalogo" data-bs-dismiss="modal" >- El Cajero Automático esta en mal estado</button>
+            
+              <hr>
+             
+                <button class="enlace2" routerLink="/paginalogo" data-bs-dismiss="modal" >- Tardaron en darme una solución</button>
+              
+              <hr>
+              
+                <button class="enlace2" routerLink="/paginalogo" data-bs-dismiss="modal" >- Otro</button>
+             
+             
+
+             
+          </div>
+          
+        </div>
+      </div>
+    </div>
+   </div>
+   
+      
+  </div>
+  
+  
+  
+  
+</body>
+
+
+
+  
+   
